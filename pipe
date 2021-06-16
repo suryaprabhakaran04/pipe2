@@ -1,0 +1,13 @@
+stages {
+    stage('Deploy') {
+        when { 
+            expression {
+                return Deploy
+            }
+        }
+        steps {
+            echo "Hello, bitwiseman!" // Step executes only when Deploy is true
+
+        }
+    }
+} 
